@@ -1,10 +1,16 @@
 package com.company;
 
+import java.util.Random;
+
 public class Main {
 
     public static void main(String[] args) {
         String name = "Кожомкул";
-        int age = 69;
+        int a = 0;
+        int b = 107;
+        int generateRandomAge = a + (int) (Math.random() * b);
+        System.out.println(generateRandomAge);
+        int age = generateRandomAge;
         int temp = 20;
 
         if (age > 20 && age < 45) {
@@ -26,6 +32,6 @@ public class Main {
                 System.out.println("К другу");
             }
         }
+
     }
 }
-
